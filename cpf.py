@@ -1,4 +1,4 @@
-cpf = "11111111111"
+cpf = input("Digite o CPF (somente numeros):")
 soma = 0
 controle = 10
 digito_1 = 0
@@ -30,7 +30,6 @@ for i in cpf:
     if controle < 2:
         break
     else:
-        # print(i, controle)
         calculo = int(i) * controle
         soma = soma + calculo
         controle -= 1
@@ -46,4 +45,4 @@ final = f'{digito_1}{digito_2}'
 if final == verificador:
     print("CPF Válido")
 else:
-    print("CPF INVÁLIDO BITCH")
+    print("CPF Inválido")
